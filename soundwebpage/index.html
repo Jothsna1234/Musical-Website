@@ -6,7 +6,7 @@
 <body>
      <div class="container">
           <div class="navbar">
-            <img src="media/music logo.png" class="logo">
+            <img src="logo.png" class="logo">
             <ul>
                 <li><a href ="#" >HOME</a></li>                       
                 
@@ -17,11 +17,11 @@
             <h1>THE <br>REAL <br> SOUND <br></h1>
             <div class="right-col">
             <p>Click here to listen</p>
-            <img src="media/play.png" id="icon">
+            <img src="play.png" id="icon">
           </div>
      </div>
     <audio id="mySong">
-        <source src="media/Song.mp3" type="audio/mp3">
+        <source src="Song.mp3" type="audio/mp3">
     </audio>
     <script>
         var mySong = document.getElementById("mySong");
@@ -29,10 +29,10 @@
         icon.onclick = function(){
            if(mySong.paused){
             mySong.play();
-            icon.src="media/pause.png";
+            icon.src="pause.png";
            }else{
             mySong.pause();
-            icon.src="media/play.png";
+            icon.src="play.png";
            }
         }
         </script>
